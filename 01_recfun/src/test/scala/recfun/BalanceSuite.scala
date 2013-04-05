@@ -24,4 +24,9 @@ class BalanceSuite extends FunSuite {
   test("balance: counting is not enough") {
     assert(!balance("())(".toList))
   }
+  
+  test("(hi!(hi)hi)(((how)(are)(you))?)") {
+    val l:List[Char] = "(hi!(hi)hi)(((how)(are)(you))?)".toList
+    assert(balance(l))
+  }
 }
